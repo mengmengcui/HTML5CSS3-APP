@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'><!--默认浏览为IE最高内核-->
+		<meta name="format-detection" content="telephone=no"/> <!--禁止数字的拨号链接-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><!--视口控制-->
+		<title>贺新春</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/script.js" ></script><!--defer为界面加载后script再加载-->
+	</head>
+	<body>
+		<div class="music">  <!--有动画效果，所以使用id-->
+			<img src="imgs/music_pointer.png" />
+			<img id="music" class="play" src="imgs/music_disc.png" />
+		</div>
+		<div class="page" id="page1">
+			<div class="bg"></div>
+			<div class="p1_lantern">点击屏幕<br/>开启好运2018</div>
+			<div class="p1_logo"></div>
+			<div class="p1_words">2018新年贺岁</div>
+		</div>
+		<div class="page" id="page2" >
+			<div class="bg p2_bg_loading"></div> <!--在界面中加入具有p2_bg_loading bg两个类的div 对其进行设置，达到淡入第二页的效果-->
+			<div class="bg"></div>
+			<div class="p2_circle"></div>
+			<div class="p2_2018"></div>
+		</div>
+		<div class="page" id="page3">
+			<div class="bg"></div>
+			<div class="p3_logo"></div>
+			<div class="p3_title"></div>
+			<div class="p3_second"></div>
+			<div class="p3_first"></div>
+			<div class="p3_blessing"></div>
+		</div>
+		<audio autoplay="true">
+			<source src="audio/陈松伶 - 贺年歌.mp3" type="audio/mp3" />
+		</audio>
+	</body>
+</html>
